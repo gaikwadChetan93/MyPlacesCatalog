@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#2C3039"
+   >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <customfonts.MyTextView
+            android:layout_weight="2"
+            android:id="@+id/changeLocation"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Location name"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            />
+        <customfonts.MyEditText
+            android:layout_weight="1"
+            android:id="@+id/edt_location_name"
+            android:background="@drawable/rounded"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+            android:layout_height="40dp" >
+        </customfonts.MyEditText>
+
+    </LinearLayout>
+
+    <customfonts.MyTextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Yourk, U.S"
+        android:layout_gravity="center"
+        android:gravity="top|center"
+        android:textSize="18dp"
+        android:textColor="@color/city_name"/>
+
+
+
+    <customfonts.MyTextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="325 Hotels"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="top|center"
+        android:textSize="16dp"
+        android:textColor="@color/hotel_name"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:id="@+id/ll_save_location"
+        android:background="#05BDBF"
+        android:layout_marginTop="20dp"
+        >
+
+
+
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Save location"
+
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

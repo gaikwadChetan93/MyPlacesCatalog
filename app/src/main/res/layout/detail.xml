@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8000">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/gulf"/>
+
+
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="fitXY"
+            android:background="#99000000"/>
+
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="20dp"
+            android:id="@+id/menu"
+            android:onClick="showMenu"
+            android:background="@drawable/ic_three"
+            android:layout_margin="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+
+
+
+
+            <customfonts.MyTextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Yourk, U.S"
+                android:layout_gravity="center"
+                android:gravity="top|center"
+                android:textSize="18dp"
+                android:textColor="@color/city_name"/>
+
+
+
+            <customfonts.MyTextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="top|center"
+                android:textSize="16dp"
+                android:textColor="@color/hotel_name"/>
+
+            <LinearLayout
+                android:id="@+id/location"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded"
+                android:padding="15dp">
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/ic_location"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"/>
+
+
+
+
+                <customfonts.MyTextView
+                    android:id="@+id/changeLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Refresh Location"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+
+
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#232A34">
+
+
+
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My saved locations"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/header_main_page_clist1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#2C3039" >
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/my_location_list" />
+
+        <customfonts.MyTextView
+            android:id="@+id/emptyElement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="NO LOCATIONS SAVED YET!"
+            android:textSize="15.0sp"
+            android:textColor="@color/city_name"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:onClick="saveLovation"
+        android:background="#05BDBF"
+        >
+
+
+
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Save current location"
+
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

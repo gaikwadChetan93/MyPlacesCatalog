@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/grey_background"
+    tools:context="com.mobileutilities.myplacescatalog.AboutUsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher"
+                 />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="35dp"
+            android:background="#393D46"
+            />
+
+        <customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About us"
+            android:layout_gravity="center"
+            android:gravity="top|center"
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="italic"
+            android:textColor="@color/city_name"/>
+
+        <customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Mobile utilities : We develope mobile utilities.\nIf you want to contact us we are available at"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/city_name"/>
+
+
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/my_link"
+            android:padding="15dp"
+            android:autoLink="email"
+            android:layout_gravity="center_horizontal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="35dp"
+            android:background="#393D46"
+            />
+        <customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Icons credit"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:textColor="@color/city_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/my_icons_link"
+            android:padding="15dp"
+            android:autoLink="email"
+            android:layout_gravity="center_horizontal" />
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"
+            android:layout_gravity="center_horizontal">
+        </com.google.android.gms.ads.AdView>
+
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/game_title"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+</ScrollView>

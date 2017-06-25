@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "852052351607",
+    "firebase_url": "https://admob-app-id-2058425988.firebaseio.com",
+    "project_id": "admob-app-id-2058425988",
+    "storage_bucket": "admob-app-id-2058425988.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852052351607:android:a799969a8f6a32b1",
+        "android_client_info": {
+          "package_name": "com.mobileutilities.myplacescatalog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852052351607-amm1j55erc5cvmvbjvuhp32dva0cg05h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP0GcdwW3q5dAouEyFIjHoqFvKOUt3pj8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

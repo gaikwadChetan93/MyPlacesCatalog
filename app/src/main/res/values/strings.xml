@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Places Catalog</string>
+    <string name="my_link"><a href="care.mobileutility@gmail.com">care.mobileutility@gmail.com</a></string>
+    <string name="my_icons_link"><a href="https://icons8.com/">https://icons8.com/</a></string>
+    <string name="interestial_ad_unit_id">ca-app-pub-2020577110084111/7965358787</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2020577110084111/1779224389</string>
+    <string name="native_ad_unit_id">ca-app-pub-2020577110084111/7056715188</string>
+</resources>

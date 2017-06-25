@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#232A34"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".UpdateActivity">
+
+    <customfonts.MyTextView
+        android:textColor="@color/colorAccent"
+        android:text="Location"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <LinearLayout android:layout_height="50dp"
+        android:layout_width="match_parent"
+        >
+        <customfonts.MyTextView
+            android:id="@+id/location"
+            android:textColor="#FFFFFF"
+            android:text="scfdfs"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+    </LinearLayout>
+
+    <customfonts.MyTextView
+        android:textColor="@color/colorAccent"
+        android:text="Address"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <customfonts.MyTextView
+        android:id="@+id/location_address"
+        android:textColor="#FFFFFF"
+        android:text="scfdfs"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <customfonts.MyEditText
+        android:id="@+id/edt_location_name"
+        android:background="@drawable/rounded"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:textColor="#FFFFFF"
+        android:layout_height="40dp" >
+    </customfonts.MyEditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:id="@+id/ll_save_location"
+        android:background="#05BDBF"
+        android:layout_marginTop="20dp"
+        android:onClick="updateLocation"
+        >
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Update location"
+
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:id="@+id/ll_delete_location"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:onClick="deleteLocation"
+        >
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Delete location"
+
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>
