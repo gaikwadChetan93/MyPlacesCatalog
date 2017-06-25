@@ -1,7 +1,12 @@
 # MyPlacesCatalog
 An android app to save all your important place and navigate to it in one click from any location
 
+Download from here
+
+https://play.google.com/store/apps/details?id=com.mobileutilities.myplacescatalog
+
 Features
+
 1.My Places Catalog enables you to save your important locations
 
 2.My Places Catalog provides provide one-touch navigation to all the stored location
